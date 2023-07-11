@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,6 @@
     <title>Express Skills</title>
 </head>
 <body>
-    <h1>Skills</h1>
-        <ul>
-            <% skills.forEach(function(t) { %>
-              <a href="/skills/<%= t.id %>"><%= t.skill %></a>
-            <% }); %>
-        </ul>
-    
-  </body>
-</html>
+    <h3><%= skill.skill %></h3>
+    <h3>Mastered: <%= skill.mastered ? 'Yes' : 'No' %></h3>
+</body>
